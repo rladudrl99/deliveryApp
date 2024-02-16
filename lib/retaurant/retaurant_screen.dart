@@ -94,12 +94,15 @@ class RestaurantScreen extends StatelessWidget {
                   //그래서 강제로 tags를 List<String>으로 바꾼것임
                   //이게 가능한 이유는 tags가 실제로 String으로 된 List라서
                   // tags: List<String>.from(item['tags']),
-                  tage
-          
-                  ratingsCount: item['ratingsCount'],
-                  deliveryTime: item['deliveryTime'],
-                  deliveryFee: item['deliveryFee'],
-                  ratings: item['ratings'],
+                  tags: pItem.tags,
+                  // ratingsCount: item['ratingsCount'],
+                  ratingsCount: pItem.ratingsCount,
+                  // deliveryTime: item['deliveryTime'],
+                  deliveryTime: pItem.deliveryTime,
+                  // deliveryFee: item['deliveryFee'],
+                  deliveryFee: pItem.deliveryFee,
+                  // ratings: item['ratings'],dd
+                  ratings: pItem.ratings,
                 );
               },
               separatorBuilder: (_, index) {
